@@ -1,0 +1,97 @@
+🧩 Sudoku Solver Using Python
+
+📌 Introduction
+
+The Sudoku Solver is an Artificial Intelligence (AI) program that solves a Sudoku puzzle automatically using Backtracking.
+
+Sudoku is a number puzzle consisting of a 9 × 9 grid. The objective is to fill the empty cells with numbers from 1 to 9 while following specific rules.
+
+🎯 Objective
+
+The objective of this project is to solve an incomplete Sudoku puzzle automatically while ensuring that all Sudoku rules are satisfied. ✅
+
+📜 Rules of Sudoku
+
+- 🔢 Each row must contain numbers from 1 to 9 without repetition.
+- 📊 Each column must contain numbers from 1 to 9 without repetition.
+- 🟦 Each 3 × 3 subgrid must contain numbers from 1 to 9 without repetition.
+- ⬜ The number "0" represents an empty cell in the input puzzle.
+
+🧠 Algorithm Used: Backtracking
+
+Backtracking is an algorithmic technique that solves a problem by trying possible solutions one by one.
+
+If a chosen number leads to an invalid solution, the program removes that number and tries another possibility. 🔄
+
+🔍 How the Algorithm Works
+
+1. 🟢 Find an empty cell in the Sudoku grid.
+2. 🔢 Try numbers from 1 to 9.
+3. ✅ Check whether a number follows the Sudoku rules.
+4. ✍️ Place the number if it is valid.
+5. 🔁 Solve the remaining puzzle using recursion.
+6. ↩️ If the choice leads to a dead end, reset the cell to "0" and try another number.
+7. 🏆 Continue until the puzzle is solved or no solution exists.
+
+⚙️ Functions Used
+
+Function| Description
+"print_grid()" 🖨️| Displays the Sudoku grid.
+"find_empty()" 🔎| Finds an empty cell represented by "0".
+"is_valid()" ✅| Checks whether a number can be placed in a cell.
+"solve_sudoku()" 🧠| Solves the puzzle using backtracking.
+
+💻 Sample Input
+
+Enter the Sudoku puzzle row by row. Use "0" for empty cells.
+
+5 3 0 0 7 0 0 0 0
+6 0 0 1 9 5 0 0 0
+0 9 8 0 0 0 0 6 0
+8 0 0 0 6 0 0 0 3
+4 0 0 8 0 3 0 0 1
+7 0 0 0 2 0 0 0 6
+0 6 0 0 0 0 2 8 0
+0 0 0 4 1 9 0 0 5
+0 0 0 0 8 0 0 7 9
+
+📤 Sample Output
+
+Solved Sudoku:
+
+5 3 4 6 7 8 9 1 2
+6 7 2 1 9 5 3 4 8
+1 9 8 3 4 2 5 6 7
+8 5 9 7 6 1 4 2 3
+4 2 6 8 5 3 7 9 1
+7 1 3 9 2 4 8 5 6
+9 6 1 5 3 7 2 8 4
+2 8 7 4 1 9 6 3 5
+3 4 5 2 8 6 1 7 9
+
+🛠️ Technologies Used
+
+- 🐍 Python — Programming language.
+- 🔄 Recursion — Calls the solving function repeatedly.
+- 🧠 Backtracking — Tries possible numbers and reverses incorrect choices.
+- 📋 Lists — Store the Sudoku grid.
+- ✅ Conditional statements and loops — Check Sudoku rules.
+
+▶️ How to Run the Program
+
+1. 📂 Save the code in a file named "sudoku_solver.py".
+2. 💻 Open a terminal in the folder containing the file.
+3. ▶️ Run the following command:
+
+python sudoku_solver.py
+
+4. ⌨️ Enter all nine rows of the Sudoku puzzle, with nine numbers separated by spaces in each row.
+5. 🎉 The program displays the solved Sudoku if a solution exists.
+
+🎓 Conclusion
+
+The Sudoku Solver demonstrates how Artificial Intelligence can solve puzzles using backtracking, recursion, and constraint checking.
+
+🧩 The program checks the Sudoku rules and systematically searches for a valid solution.
+
+🚀 This project provides a simple introduction to problem-solving techniques used in Artificial Intelligence.
